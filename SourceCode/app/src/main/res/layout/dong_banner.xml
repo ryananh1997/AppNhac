@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/ImageViewBackgroundBanner"
+        android:scaleType="fitXY"
+        />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ImageViewBackgroundBanner">
+        <ImageView
+            android:id="@+id/ImageViewBanner"
+            android:layout_margin="10dp"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:text="Ten bai hat "
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/textviewtitlebannerbaihat"
+            android:layout_alignTop="@id/ImageViewBanner"
+            android:layout_toRightOf="@id/ImageViewBanner"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/ImageViewBanner"
+            android:layout_below="@id/textviewtitlebannerbaihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textviewnoidung"
+                android:textColor="#fff"
+                android:layout_marginLeft="5dp"
+                android:text="Giai điệu trữ tình ngọt ngào của bài hát hoàn toàn phù hợp với chất giọng tràn đầy cảm xúc "
+                android:layout_marginRight="40dp"
+                android:maxLines="2"
+                android:textSize="13sp"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
