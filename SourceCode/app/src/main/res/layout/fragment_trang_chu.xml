@@ -18,9 +18,14 @@
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_Banner"
-         tools:layout="@layout/fragment_banner" />
+         tools:layout="@layout/fragment_banner" ></fragment>
 
-
+        <fragment
+            android:id="@+id/fragmentplaylist"
+            android:layout_width="match_parent"
+            android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_Playlist"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_banner" />
     </LinearLayout>
 
 

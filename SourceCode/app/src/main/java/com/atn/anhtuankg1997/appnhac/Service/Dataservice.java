@@ -1,5 +1,6 @@
 package com.atn.anhtuankg1997.appnhac.Service;
 
+import com.atn.anhtuankg1997.appnhac.Model.Playlist;
 import com.atn.anhtuankg1997.appnhac.Model.Quangcao;
 
 import java.util.List;
@@ -11,5 +12,9 @@ public interface Dataservice {
 
     @GET("songbanner.php")
     Call<List<Quangcao>> GetDataBanner();
+
+
+    @GET("playlistforcurrentday.php")
+    Call<List<Playlist>> GetPlayListCurrentDay();
 
 }
