@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fd2d2d">
+    android:scrollbars="none"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+     <fragment
+         android:id="@+id/fragmentbanner"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_Banner"
+         tools:layout="@layout/fragment_banner" />
 
-</LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
