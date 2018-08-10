@@ -20,22 +20,26 @@
          android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_Banner"
          tools:layout="@layout/fragment_banner" ></fragment>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:scrollbars="none"
-            android:fillViewport="true">
-            <fragment
+        <fragment
                 android:id="@+id/fragmentplaylist"
                 android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_Playlist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:layout="@layout/fragment_banner" ></fragment>
 
+        <fragment
+            android:id="@+id/fragmenchudetheloaitoday"
+            android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_ChuDeTheLoai_Today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_chudetheloai_today"></fragment>
 
-        </ScrollView>
-
+        <fragment
+            android:id="@+id/fragmentalbum"
+            android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_Album_Hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_chudetheloai_today"></fragment>
 
     </LinearLayout>
 
