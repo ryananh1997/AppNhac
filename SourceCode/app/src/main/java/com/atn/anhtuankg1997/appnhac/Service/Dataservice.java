@@ -1,6 +1,7 @@
 package com.atn.anhtuankg1997.appnhac.Service;
 
 import com.atn.anhtuankg1997.appnhac.Model.Album;
+import com.atn.anhtuankg1997.appnhac.Model.BaiHat;
 import com.atn.anhtuankg1997.appnhac.Model.ChuDeTheLoaiToday;
 import com.atn.anhtuankg1997.appnhac.Model.Playlist;
 import com.atn.anhtuankg1997.appnhac.Model.Quangcao;
@@ -24,6 +25,9 @@ public interface Dataservice {
 
     @GET("albumhot.php")
     Call<List<Album>> GetAlbumHot();
+
+    @GET("baihatduocthich.php")
+    Call<List<BaiHat>> GetBaiHatHot();
 
 
 }

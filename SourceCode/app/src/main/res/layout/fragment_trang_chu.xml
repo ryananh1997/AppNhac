@@ -41,6 +41,13 @@
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_chudetheloai_today"></fragment>
 
+        <fragment
+            android:id="@+id/fragmenbaihathot"
+            android:name="com.atn.anhtuankg1997.appnhac.Fragment.Fragment_BaiHatHot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_chudetheloai_today"></fragment>
+
     </LinearLayout>
 
 
