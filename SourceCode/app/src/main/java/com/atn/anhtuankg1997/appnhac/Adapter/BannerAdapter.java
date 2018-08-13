@@ -1,12 +1,15 @@
 package com.atn.anhtuankg1997.appnhac.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.atn.anhtuankg1997.appnhac.Activity.DanhsachbaihatActivity;
 import com.atn.anhtuankg1997.appnhac.Model.Quangcao;
 import com.atn.anhtuankg1997.appnhac.R;
 import com.squareup.picasso.Picasso;
@@ -40,7 +43,7 @@ public class BannerAdapter extends PagerAdapter {
 
     @NonNull
     @Override
-    public Object instantiateItem(@NonNull ViewGroup container, int position) {
+    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.dong_banner,null);
 
@@ -53,6 +56,16 @@ public class BannerAdapter extends PagerAdapter {
         Picasso.with(context).load(arrayListBanner.get(position).getHinhBaiHat()).into(imagesongbanner);
         txttitlesongbanner.setText(arrayListBanner.get(position).getTenBaiHat());
         txtnoidung.setText(arrayListBanner.get(position).getNoiDung());
+        
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DanhsachbaihatActivity.class);
+                intent.putExtra("banner", arrayListBanner.get(position));
+                context.startActivity(intent);
+            }
+        });
+        
 
         container.addView(view);
 
