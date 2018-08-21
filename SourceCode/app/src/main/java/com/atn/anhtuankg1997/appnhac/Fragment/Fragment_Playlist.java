@@ -1,5 +1,6 @@
 package com.atn.anhtuankg1997.appnhac.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.telecom.Call;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.atn.anhtuankg1997.appnhac.Activity.DanhsachcacplaylistActivity;
 import com.atn.anhtuankg1997.appnhac.Adapter.PlaylistAdapter;
 import com.atn.anhtuankg1997.appnhac.Model.Playlist;
 import com.atn.anhtuankg1997.appnhac.R;
@@ -42,8 +44,14 @@ public class Fragment_Playlist extends Fragment {
         lvplaylist = view.findViewById(R.id.listviewplaylist);
         txtTitlePlaylist = view.findViewById(R.id.textviewtitleplaylist);
         txtviewxemthemplaylist = view.findViewById(R.id.textviewviewmoreplaylist);
-
         GetData();
+        txtviewxemthemplaylist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), DanhsachcacplaylistActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 

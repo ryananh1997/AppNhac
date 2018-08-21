@@ -16,7 +16,6 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsingtoolbar"
             app:expandedTitleGravity="center|bottom"
-            app:expandedTitleMarginBottom="33dp"
             android:background="@mipmap/ic_launcher"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
@@ -60,7 +59,8 @@
     <androidx.core.widget.NestedScrollView
         app:layout_behavior="@string/bottom_sheet_behavior"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        >
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerviewdanhsachbaihat"
             android:layout_width="match_parent"
