@@ -9,6 +9,7 @@ import com.atn.anhtuankg1997.appnhac.Model.Quangcao;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -36,6 +37,8 @@ public interface Dataservice {
     @POST("danhsachbaihat.php")
     Call<List<BaiHat>> GetDanhSachBaiHatTheoQuangCao(@Field("idquangcao") String idquangcao);
 
+    @GET("danhsachcacplaylist.php")
+    Call<List<Playlist>> GetDanhSachPlayList();
 
 
 }
